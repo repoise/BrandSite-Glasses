@@ -19,6 +19,9 @@
 .mr4 {
   margin-right: 4px; }
 
+.mr16 {
+  margin-right: 16px; }
+
 .mr22 {
   margin-right: 22px; }
 
@@ -307,6 +310,9 @@ img {
 
 .mr4 {
   margin-right: 4px; }
+
+.mr16 {
+  margin-right: 16px; }
 
 .mr22 {
   margin-right: 22px; }
@@ -724,6 +730,9 @@ body {
 .mr4 {
   margin-right: 4px; }
 
+.mr16 {
+  margin-right: 16px; }
+
 .mr22 {
   margin-right: 22px; }
 
@@ -805,6 +814,9 @@ body {
 
 .mr4 {
   margin-right: 4px; }
+
+.mr16 {
+  margin-right: 16px; }
 
 .mr22 {
   margin-right: 22px; }
@@ -963,6 +975,164 @@ body {
       .optical-body .pagination a {
         font-size: 16px;
         line-height: 26px; } }
+
+.pt12 {
+  padding-top: 12px; }
+
+.pt48 {
+  padding-top: 48px; }
+
+.p16 {
+  padding: 16px; }
+
+.px32 {
+  padding: 32px 0; }
+
+.pb12 {
+  padding-bottom: 12px; }
+
+.pb100 {
+  padding-bottom: 100px; }
+
+.mr4 {
+  margin-right: 4px; }
+
+.mr16 {
+  margin-right: 16px; }
+
+.mr22 {
+  margin-right: 22px; }
+
+.mb4 {
+  margin-bottom: 4px; }
+
+.mb8 {
+  margin-bottom: 8px; }
+
+.mb16 {
+  margin-bottom: 16px; }
+
+.mb24 {
+  margin-bottom: 24px; }
+
+.mb32 {
+  margin-bottom: 32px; }
+
+.mb36 {
+  margin-bottom: 36px; }
+
+.mb48 {
+  margin-bottom: 48px; }
+
+.mb80 {
+  margin-bottom: 80px; }
+
+.my16 {
+  margin: 16px 0; }
+
+.location .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 96px 0 80px 0; }
+  @media (max-width: 992px) {
+    .location .container {
+      padding: 96px 36px; } }
+  @media (max-width: 766px) {
+    .location .container {
+      padding: 40px 14px; } }
+
+.location .select-area {
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px; }
+  @media (max-width: 766px) {
+    .location .select-area {
+      font-size: 16px;
+      margin-bottom: 24px; } }
+  .location .select-area .select-style {
+    font-size: 18px;
+    width: 24%; }
+
+.location .location-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 48px 24px; }
+  @media (max-width: 992px) {
+    .location .location-list {
+      gap: 24px 24px; } }
+  @media (max-width: 766px) {
+    .location .location-list {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      gap: 24px 0; } }
+
+.location .location-card {
+  width: 32.1%; }
+  @media (max-width: 992px) {
+    .location .location-card {
+      width: 48.3%; } }
+  @media (max-width: 766px) {
+    .location .location-card {
+      width: 100%; } }
+  .location .location-card img {
+    display: block; }
+  .location .location-card .store-name {
+    font-size: 24px;
+    padding: 8px 0 8px 24px;
+    border: 1px solid lightgrey; }
+  .location .location-card .store-info {
+    padding: 16px 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8px 0;
+    font-size: 20px;
+    height: 168px;
+    border: 1px solid lightgrey; }
+    .location .location-card .store-info li {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+  .location .location-card .icon-style3 {
+    font-size: 20px;
+    margin-right: 8px; }
+  .location .location-card a {
+    display: block;
+    padding: 16px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #000;
+    font-size: 19px;
+    line-height: 27px; }
+    .location .location-card a:hover {
+      background-color: #650300; }
+
+.title2 {
+  font-size: 48px;
+  font-weight: 700;
+  border-left: 8px solid #AA0601;
+  padding-left: 15px;
+  margin-bottom: 32px; }
+  @media (max-width: 766px) {
+    .title2 {
+      font-size: 24px;
+      margin-bottom: 24px; } }
 
 body {
   font-family: "Roboto","Noto Sans TC", sans-serif;
