@@ -741,9 +741,6 @@ p {
         .message input[type=submit] {
           width: 100%; } }
 
-* {
-  outline: 1px solid #000; }
-
 body {
   font-family: "Roboto","Noto Sans TC", sans-serif;
   font-size: 16px;
