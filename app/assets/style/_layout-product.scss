@@ -1,0 +1,54 @@
+@import "variable";
+
+@mixin pad {
+    @media (max-width: 992px) {
+        @content
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 766px) {
+        @content
+    }
+}
+
+.menu{
+    .series-list{
+        width: 100%;
+        display: flex;
+        li{
+            width: 33.3%;
+            border-right: 1px solid lightgrey;
+            
+        }
+        .series-1{
+            border-left: 1px solid lightgrey;
+            a{
+                border-bottom: 8px solid $primary;
+            }
+        }
+        a{
+            display: block;
+            text-align: center;
+            font-size: 32px;
+            line-height: 48px;
+            color: $dark;
+            font-weight: 500;
+            // 底部為了hover預留透明空間，這樣才不會額外下推空間
+            padding: 24px 0 16px 0;
+            border-bottom: 8px solid transparent;
+            &:hover{
+                border-bottom: 8px solid $primary;
+            }
+            &:focus{
+                border-bottom: 8px solid $primary;
+            }
+            @include mobile(){
+                font-size: 16px;
+                line-height: 24px;
+                padding: 16px 0 8px 0;
+            }
+        }
+    }
+    
+}

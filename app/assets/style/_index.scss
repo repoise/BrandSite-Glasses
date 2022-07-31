@@ -1,5 +1,11 @@
 @import "variable";
 
+body{
+    line-height: 1.5;
+}
+
+
+
 
 
 .banner{
@@ -35,16 +41,17 @@
             padding: 6px 12px;
         }
     }
-    h4{
+    .subtitle{
+        font-size: $fs36;
         @include mobile(){
-            font-size: 16px;
-            line-height: 24px;
+            font-size: $fs16;
         }    
     }
-    h2{
+    .slogan{
+        font-size: $fs64;
+        font-weight: 700;
         @include mobile(){
-          font-size: 24px;
-          line-height: 36px;
+          font-size: $fs24;
           margin-bottom: 8px;  
         }
     }
@@ -84,14 +91,14 @@
             width: 100%;
         }
     }
-    h3{
-        @include mobile (){
-            font-size: 24px;
-            line-height: 36px;
-        }      
-    }
     .icon-style{
         font-size: 84px;
+        color: $secondary;
+        font-variation-settings: 'wght'700, 'opsz'48;
+    }
+    .feature-title{
+        font-size: $fs24;
+        font-weight: 700;
         color: $secondary;
     }
 }
@@ -140,10 +147,6 @@
             @include mobile(){
                 width: 348px;
             }
-        }
-        h3{
-            color: $primary;
-            font-style: italic;
         }
     }
 }
@@ -274,15 +277,11 @@
         @include pad(){
             margin-bottom: 24px;
         }
-        @include mobile(){
-            font-size: 24px;
-            line-height: 36px;
-        }
     }
-    h6{
+    p{
+        font-size: $fs20;
         @include pad(){
-            font-size: 16px;
-            line-height: 24px;
+            font-size: $fs16;
         }
     }
     lable{
@@ -320,4 +319,21 @@
             }
         }   
     }
+}
+
+.title{
+    font-size: $fs48;
+    font-weight: 700;
+    color: $secondary;
+    text-align: center;
+    @include mobile(){
+        font-size: $fs24;
+    }
+}
+.series-name{
+    font-size: $fs48;
+    font-weight: 900;
+    color: $primary;
+    font-style: italic;
+    text-align: center;
 }

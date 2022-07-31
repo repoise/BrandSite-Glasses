@@ -4,17 +4,20 @@
 // page
 @import "layout";
 @import "index";
+@import "layout-product";
+@import "product";
+
 // *{
 //   outline: 1px solid #000;
 // }
 body {
   font-family: "Roboto","Noto Sans TC", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   font-weight: 400;
 }
 .container{
   max-width: 1320px;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
 }

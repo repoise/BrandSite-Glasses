@@ -1,0 +1,138 @@
+@import "variable";
+
+@mixin pad {
+    @media (max-width: 992px) {
+        @content
+    }
+}
+
+@mixin mobile {
+    @media (max-width: 766px) {
+        @content
+    }
+}
+
+
+.series-banner{
+    ul{
+        display: flex;
+    }
+    img{
+        display: block; 
+        
+    }
+}
+.optical-body{
+    .container{
+        flex-direction: column;
+        text-align: center;
+        padding: 80px 0;
+        @include pad(){
+            padding: 80px 36px;
+        }
+        @include mobile(){
+            padding: 40px 14px;
+        }
+    }
+    .optical-title{
+        font-size: $fs42;
+        font-weight: 500;
+        @include mobile(){
+            font-size: $fs24;
+        }
+    }
+    .optical-subtitle{
+        font-size: $fs32;
+        font-weight: 400;
+        @include mobile(){
+            font-size: $fs24;
+        }
+    }
+    .optical-product{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 80px 24px;
+        @include pad(){
+            gap: 40px 24px;
+        }
+        @include mobile(){
+            gap: 24px 0;
+            flex-direction: column;
+            align-items: center;
+        }
+        li{
+            width: 23.6%;
+            font-size: $fs24;
+            font-weight: 400;
+            @include pad(){
+                width: 48.3%;
+            }
+            @include mobile(){
+                width: 100%;
+            }
+        }
+        .product-info{
+            display: flex;
+            justify-content: space-between;
+        }
+        .price{
+            color: $primary;
+            font-weight: 500;
+        }
+        a{
+            color: $dark;
+        }
+        img{
+            display: block;
+        }
+    }
+    .color{
+        display: flex;
+        gap: 0 8px;
+        .brown, .red{
+            width: 24px;
+            height: 24px;
+            border-radius: 8px;
+        }
+        .brown{
+            background-color: $secondary;
+        }
+        .red{
+            background-color: $primary;
+        }
+    }
+    .pagination{
+        display: flex;
+        justify-content: center;
+        .last-page, .next-page{
+            padding: 12px;
+            border: 1px solid $dark;
+        }
+        .page{
+            padding: 12px 16px;
+            border-top: 1px solid $dark;
+            border-bottom: 1px solid $dark;
+            border-right: 1px solid $dark;
+        }
+        :nth-child(6){
+            // 為什麼選不到第五頁呢？
+            border-right: 0;
+        }
+        a{
+            display: block;
+            color: $dark;
+            font-size: 19px;
+            line-height: 29px;
+            &:hover{
+                color: $white;
+                background-color: #555555;
+            }
+            @include mobile(){
+                font-size: $fs16;
+                line-height: 26px;
+            }
+        }
+    }
+}
+
