@@ -6,19 +6,24 @@
     }
 }
 
+@mixin mobile {
+    @media (max-width: 766px) {
+        @content
+    }
+}
 
 .header{
     background-color: $primary;
-}
-.container{
-    max-width: 1320px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    @include pad(){
-        flex-direction: column;
-        flex-wrap: wrap;
-        
+    .container{
+        justify-content: space-between;
+        @include pad(){
+            padding: 0 36px;
+        }
+        @include mobile(){
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 0;
+        }
     }
 }
 .logo{
@@ -30,7 +35,7 @@
     background-repeat: no-repeat;
     background-size: contain;
     @include hide-text;
-    @include pad(){
+    @include mobile(){
         width: 100%;
     }
 }
@@ -39,7 +44,7 @@
     flex-wrap: wrap;
     align-items: center;
     li{
-        @include pad(){
+        @include mobile(){
             width: 50%;
             border: 1px solid $white;
         }
@@ -52,7 +57,7 @@
         &:hover{
             background-color: $secondary;
         }
-        @include pad(){
+        @include mobile(){
             width: 100%;
             margin-left: 0;
             text-align: center;
@@ -67,7 +72,10 @@
         flex-direction: column;
         padding-top: 48px;
         @include pad(){
-            padding: 24px 16px;
+            padding: 48px 36px 0 36px;
+        }
+        @include mobile(){
+            padding: 24px 14px;
         }
     }
     a{
@@ -77,7 +85,7 @@
 .contact{
     display: flex;
     justify-content: space-between;
-    @include pad(){
+    @include mobile(){
         margin-bottom: 24px;
     }
 }
@@ -94,7 +102,7 @@
             background-color: $secondary;
         }
     }
-    @include pad(){
+    @include mobile(){
         display: none;
     }
 }
@@ -106,7 +114,7 @@
     .icon-style2{
         font-size: 36px;
         font-variation-settings: 'wght'700, 'opsz'36;
-        @include pad(){
+        @include mobile(){
             font-size: 20px;
             font-variation-settings: 'wght'400, 'opsz'20;
         }
@@ -114,7 +122,7 @@
     a{
         font-size: 36px;
         line-height: 54px;
-        @include pad(){
+        @include mobile(){
             font-size: 16px;
             line-height: 24px;
         }
@@ -122,11 +130,18 @@
 }
 .sns-list{
     display: flex;
+    gap: 0 32px;
+    @include pad(){
+        gap: 0 16px;
+    }
     img{
         display: block;
         height: 48px;
-        margin-left: 32px;
+        
         @include pad(){
+            height: 40px;
+        }
+        @include mobile(){
             height: 24px;
             margin-left: 8px;
         }
@@ -138,7 +153,7 @@
     display: flex;
     justify-content: space-between;
     p{
-        @include pad(){
+        @include mobile(){
             margin-bottom: 8px;
         }
     }
@@ -146,19 +161,22 @@
         display: flex;
         li{
             margin-left: 48px;
-            @include pad(){
+            @include mobile(){
                 margin-left: 0;
             }
         }
         a{
             display: block;
         }
-        @include pad(){
+        @include mobile(){
             flex-direction: column;
             gap: 8px 0;
         }
     }
     @include pad(){
+        padding: 32px 0 40px 0;
+    }
+    @include mobile(){
         padding: 16px 0 0 0;
         flex-direction: column;  
     }

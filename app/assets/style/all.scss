@@ -3,6 +3,7 @@
 
 // page
 @import "layout";
+@import "index";
 // *{
 //   outline: 1px solid #000;
 // }
@@ -11,4 +12,9 @@ body {
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+}
+.container{
+  max-width: 1320px;
+  margin: 0 auto;
+  display: flex;
 }
