@@ -12,6 +12,7 @@ $font-size-base:16px;
 
 $fs14: $font-size-base * 0.875;
 $fs16: $font-size-base;
+$fs18: $font-size-base * 1.125;
 $fs20: $font-size-base * 1.25;
 $fs24: $font-size-base * 1.5;
 $fs28: $font-size-base * 1.75;
@@ -44,6 +45,9 @@ $fs72: $font-size-base * 4.5;
 }
 .mr4{
     margin-right: 4px;
+}
+.mr16{
+    margin-right: 16px;
 }
 .mr22{
     margin-right: 22px;
