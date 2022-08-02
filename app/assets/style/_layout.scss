@@ -1,21 +1,8 @@
-@import "hide-text";
-
-@mixin pad {
-    @media (max-width: 992px) {
-        @content
-    }
-}
-
-@mixin mobile {
-    @media (max-width: 766px) {
-        @content
-    }
-}
-
 .header{
     background-color: $primary;
     .container{
         justify-content: space-between;
+        padding: 0 12px;
         @include pad(){
             padding: 0 36px;
         }
@@ -78,6 +65,10 @@
         }
         @include mobile(){
             padding: 24px 14px;
+            .mb32{
+                // 這個的位置要注意！很容易寫去.contact裡面
+                margin-bottom: 24px;
+            }
         }
     }
     a{
@@ -87,10 +78,6 @@
 .contact{
     display: flex;
     justify-content: space-between;
-    @include mobile(){
-        // 為什麼蓋不過mb32呢？
-        margin-bottom: 24px;
-    }
 }
 .footer-nav-list{
     display: flex;

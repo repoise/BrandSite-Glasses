@@ -1,6 +1,11 @@
 @import "variable";
 @import "reset";
 
+// layout
+@import "grid";
+@import "container";
+@import "hide-text";
+
 // page
 @import "layout";
 @import "index";
@@ -8,17 +13,11 @@
 @import "product";
 @import "location";
 
-// *{
-//   outline: 1px solid #000;
-// }
+*{
+  outline: 1px solid #000;
+}
 body {
   font-family: "Roboto","Noto Sans TC", sans-serif;
   line-height: 1.5;
   font-weight: 400;
-}
-.container{
-  max-width: 1320px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: row;
 }

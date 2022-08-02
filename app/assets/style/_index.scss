@@ -1,13 +1,4 @@
-@import "variable";
-
-body{
-    line-height: 1.5;
-}
-
-
-
-
-
+// 各區塊css
 .banner{
     background-image: url(../images/home-header.png);
     background-size: cover;
@@ -23,6 +14,7 @@ body{
     .container{
         flex-direction: column;
         align-items: flex-end;
+        padding: 0 12px;
         height: calc(100vh - 80px);
         justify-content: center;
         color: $secondary;
@@ -62,13 +54,6 @@ body{
     background-color: $bg-pink;
     .container{
         flex-direction: column;
-        padding: 80px 0;
-        @include pad(){
-            padding: 80px 36px;
-        }
-        @include mobile(){
-            padding: 40px 14px;
-        }
     }
     &-list{
         display: flex;
@@ -107,16 +92,6 @@ body{
 .series-classic{
     .container{
         flex-direction: column;
-        padding: 80px 0;
-        @include mobile(){
-            padding: 40px 14px;
-        }
-    }
-    h3{
-        @include mobile(){
-            font-size: 24px;
-            line-height: 36px;
-        }
     }
     .classic-list{
         display: flex;
@@ -126,6 +101,9 @@ body{
             flex-direction: column;
             align-items: center;
             gap: 24px 0;
+        }
+        @include mobile(){
+            width: 100%;
         }
         li{
             width: 32%;
@@ -140,13 +118,6 @@ body{
         }
         img{
             display: block;
-            // width: 416px;
-            @include pad(){
-                width: 316px;
-            }
-            @include mobile(){
-                width: 348px;
-            }
         }
     }
 }
@@ -159,22 +130,8 @@ body{
     background-repeat: no-repeat;
     .container{
         flex-direction: column;
-        padding: 80px 0;
-        @include pad(){
-            padding: 80px 36px;
-        }
-        @include mobile(){
-            padding: 40px 14px;
-        }
-    }
-    h3{
-        color: $white;
-        @include mobile(){
-         font-size: 24px;
-         line-height: 36px;   
-        }
-        @include mobile(){
-         margin-bottom: 24px;   
+        .title{
+            color: $white;
         }
     }
     .cobranding-list{
@@ -190,10 +147,6 @@ body{
             display: block;
             // mobile視角 如何調整圖片顯示的比例？
         }
-        h3{
-            color: $primary;
-            font-style: italic;
-        }
     }
 }
 
@@ -201,20 +154,6 @@ body{
 .review{
     .container{
         flex-direction: column;
-        padding: 80px 0;
-        @include pad(){
-            padding: 80px 36px;        
-        }
-        @include mobile(){
-            padding: 40px 16px;
-        }
-    }
-    h3{
-        @include mobile(){
-            font-size: 24px;
-            line-height: 36px;
-            margin-bottom: 24px;
-        }
     }
     &-list{
         display: flex;
@@ -262,8 +201,7 @@ body{
     background-color: $bg-pink;
     .container{
         flex-direction: column;
-        width: 36%;
-        padding: 80px 0;
+        width: 56%;
         @include pad(){
             padding: 80px 0;
             width: 70.4%;
@@ -273,10 +211,8 @@ body{
             width: 100%;
         }
     }
-    h3{
-        @include pad(){
-            margin-bottom: 24px;
-        }
+    .title{
+        margin-bottom: 24px;
     }
     p{
         font-size: $fs20;
@@ -321,13 +257,17 @@ body{
     }
 }
 
+
+//通用選擇器
 .title{
     font-size: $fs48;
     font-weight: 700;
     color: $secondary;
     text-align: center;
+    margin-bottom: 48px;
     @include mobile(){
         font-size: $fs24;
+        margin-bottom: 24px;
     }
 }
 .series-name{
@@ -336,4 +276,7 @@ body{
     color: $primary;
     font-style: italic;
     text-align: center;
+    @include mobile(){
+        font-size: $fs24;
+    }
 }

@@ -1,0 +1,14 @@
+.container{
+    max-width: 1320px;
+    padding: 80px 12px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    @include pad(){
+        padding: 80px 36px;
+    }
+    @include mobile(){
+        padding: 40px 14px;
+        // width:100%;
+    }
+  }
