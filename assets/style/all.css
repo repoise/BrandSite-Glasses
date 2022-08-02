@@ -996,9 +996,6 @@ img {
       font-size: 24px;
       margin-bottom: 24px; } }
 
-* {
-  outline: 1px solid #000; }
-
 body {
   font-family: "Roboto","Noto Sans TC", sans-serif;
   line-height: 1.5;
