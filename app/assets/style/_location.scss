@@ -3,7 +3,7 @@
 .location{
     .container{
         flex-direction: column;
-        padding: 96px 0 80px 0;
+        padding: 96px 12px 80px 12px;
         @include pad(){
             padding: 96px 36px;
         }
@@ -30,6 +30,7 @@
     .location-list{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 48px 24px;
         @include pad(){
             gap: 24px 24px;
@@ -40,7 +41,7 @@
         }
     }
     .location-card{
-        width: 32.1%;
+        width: 32%;
         @include pad(){
             width: 48.3%;
         }@include mobile(){
