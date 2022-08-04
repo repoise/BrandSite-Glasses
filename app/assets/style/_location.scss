@@ -1,4 +1,3 @@
-@import "variable";
 
 .location{
     .container{
@@ -23,14 +22,10 @@
             font-size: $fs18;
             width: 24%;
         }
-         @include mobile(){
-            
-        }
     }
     .location-list{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         gap: 48px 24px;
         @include pad(){
             gap: 24px 24px;
@@ -41,62 +36,49 @@
         }
     }
     .location-card{
-        width: 32%;
+        // 需要特別留心空格跟括號！
+        width: calc((100% - 48px)/3);
         @include pad(){
-            width: 48.3%;
+            width: calc((100% - 24px)/2);
         }@include mobile(){
             width: 100%;
-        }
-        img{
-            display: block;            
-        }
-        .store-name{
-            font-size: $fs24;
-            padding: 8px 0 8px 24px;
-            border: 1px solid lightgrey;
-        }
-        .store-info{
-            padding: 16px 24px;
-            display: flex;
-            flex-direction: column;
-            gap: 8px 0;
-            font-size: $fs20;
-            height: 168px;
-            border: 1px solid lightgrey;
-            li{
-                display: flex;
-                align-items: center;
-            }
-        }
-        .icon-style3{
-            font-size: 20px;
-            margin-right: 8px;
-        }
-        a{
-            display: block;
-            padding: 16px 0;
-            text-align: center;
-            color: $white;
-            background-color: $dark;
-            font-size: 19px;
-            line-height: 27px;
-            &:hover{
-                background-color: $secondary;
-            }
         }
     } 
     
 }
 
-// 通用選擇器
-.title2{
-    font-size: $fs48;
-    font-weight: 700;
-    border-left: 8px solid $primary;
-    padding-left: 15px;
-    margin-bottom: 32px;
-    @include mobile(){
-        font-size: $fs24;
-        margin-bottom: 24px;
+.store-name{
+    font-size: $fs24;
+    padding: 8px 0 8px 24px;
+    border: 1px solid lightgrey;
+}
+.store-info{
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px 0;
+    font-size: $fs20;
+    height: 168px;
+    border: 1px solid lightgrey;
+    li{
+        display: flex;
+        align-items: center;
     }
 }
+.icon-style3{
+    font-size: 20px;
+    margin-right: 8px;
+}
+.store-link{
+    display: block;
+    padding: 16px 0;
+    text-align: center;
+    color: $white;
+    background-color: $dark;
+    font-size: 19px;
+    line-height: 27px;
+    &:hover{
+        background-color: $secondary;
+    }
+}
+// 全站通用選擇器在_layout.scss

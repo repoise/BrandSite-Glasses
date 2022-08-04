@@ -1,24 +1,24 @@
+// base
 @import "variable";
 @import "reset";
+@import "base";
+
 
 // layout
-@import "grid";
+@import "mixin";
 @import "container";
-@import "hide-text";
+
 
 // page
 @import "layout";
-@import "index";
 @import "layout-product";
+@import "layout-branches";
+@import "index";
 @import "product";
 @import "location";
+@import "branches";
 @import "faq";
 
-// *{
-//   outline: 1px solid #000;
-// }
-body {
-  font-family: "Roboto","Noto Sans TC", sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-}
+
+
+

@@ -1,0 +1,20 @@
+
+.branches-layout{
+    .container{
+        flex-direction: column;
+        padding: 96px 12px 0 12px;
+    }
+    .select-store{
+        font-size: $fs24;
+        display: flex;
+        margin-bottom: 40px;
+        @include mobile(){
+            font-size: $fs16;
+            margin-bottom: 24px;
+        }
+        .select-style{
+            font-size: $fs18;
+            width: 24%;
+        }
+    }
+}

@@ -101,9 +101,11 @@
             flex-direction: column;
             align-items: center;
             gap: 24px 0;
+            max-width: 336px;
+            margin: 0 auto;
         }
         @include mobile(){
-            width: 100%;
+            max-width: 100%;
         }
         li{
             width: 32%;
@@ -115,9 +117,6 @@
             @include mobile(){
                 width: 100%;
             }
-        }
-        img{
-            display: block;
         }
     }
 }
@@ -165,9 +164,9 @@
         }
         @include mobile(){
             gap: 24px 0;
-        }
-        img{
-            display: block;
+            // 讓766px以下不會跑版
+            max-width: 348px;
+            margin: 0 auto;
         }
     }
     &-card{
@@ -177,7 +176,7 @@
         flex-direction: column;
         align-items: center;
         @include pad(){
-            width: 48%;            
+            width: calc((100% - 24px)/2);            
         }
         @include mobile(){
             width: 100%;
@@ -189,7 +188,7 @@
         flex-direction: column;
         justify-content: space-between;
     }
-    .date{
+    time{
         color: #707070;
         font-size: 14px;
         line-height: 21px;
@@ -222,6 +221,7 @@
     }
     lable{
         margin-bottom: 8px;
+        font-size: $fs16;
         }
     input{
         width: 100%;
@@ -236,9 +236,9 @@
             padding-bottom: 100px;
         }
         &[type=checkbox]{
-            margin: 0;
-            width: 2%;
-            margin-right: 8px;
+            margin: 0 8px 0 0;
+            height: 18px;
+            width: 18px;
         }
         &[type=submit]{
             display: block;
@@ -248,35 +248,21 @@
             padding: 16px 0;
             margin: 0 auto;
             &:hover{
-            background-color: $secondary;
+                background-color: $secondary;
             }
             @include mobile(){
                 width: 100%;
             }
         }   
     }
+    .privacy-check{
+        display: flex;
+        align-items: center;
+        lable{
+            margin-bottom: 0;
+        }
+    }
 }
 
 
-//通用選擇器
-.title{
-    font-size: $fs48;
-    font-weight: 700;
-    color: $secondary;
-    text-align: center;
-    margin-bottom: 48px;
-    @include mobile(){
-        font-size: $fs24;
-        margin-bottom: 24px;
-    }
-}
-.series-name{
-    font-size: $fs48;
-    font-weight: 900;
-    color: $primary;
-    font-style: italic;
-    text-align: center;
-    @include mobile(){
-        font-size: $fs24;
-    }
-}
+//全站通用選擇器在_layout.scss

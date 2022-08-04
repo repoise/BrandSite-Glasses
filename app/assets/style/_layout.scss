@@ -1,3 +1,5 @@
+
+// header
 .header{
     background-color: $primary;
     .container{
@@ -87,7 +89,7 @@
 }
 
 
-
+// footer
 .footer{
     background-color: $primary;
     color: $white;
@@ -207,5 +209,39 @@
             padding: 16px 0 0 0;
             flex-direction: column;  
         }
+    }
+}
+
+// 全站通用選擇器
+.title{
+    font-size: $fs48;
+    font-weight: 700;
+    color: $secondary;
+    text-align: center;
+    margin-bottom: 48px;
+    @include mobile(){
+        font-size: $fs24;
+        margin-bottom: 24px;
+    }
+}
+.series-name{
+    font-size: $fs48;
+    font-weight: 900;
+    color: $primary;
+    font-style: italic;
+    text-align: center;
+    @include mobile(){
+        font-size: $fs24;
+    }
+}
+.title2{
+    font-size: $fs48;
+    font-weight: 700;
+    border-left: 8px solid $primary;
+    padding-left: 15px;
+    margin-bottom: 32px;
+    @include mobile(){
+        font-size: $fs24;
+        margin-bottom: 24px;
     }
 }
