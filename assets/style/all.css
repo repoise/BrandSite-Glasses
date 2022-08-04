@@ -101,9 +101,6 @@ body {
   line-height: 1.5;
   font-weight: 400; }
 
-* {
-  outline: 1px solid #000; }
-
 .container {
   max-width: 1320px;
   padding: 80px 12px;
