@@ -2,8 +2,9 @@
     .container{
         padding: 0 12px 80px 12px;
         gap: 0 24px;
-        @include pad(){
-            padding: 0 36px 80px 26px;
+
+        @include pad (){
+            padding: 0 36px 80px 36px;
             flex-direction: column;
             gap: 24px 0;
         }
@@ -23,6 +24,11 @@
         }
     }
     .location-img{
+        img{
+            @include pad(){
+                height: 100%;
+            }
+        }
         @include pad(){
             width: calc((100% - 24px)/2);
         }
