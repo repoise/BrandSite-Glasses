@@ -10,3 +10,4 @@ $('.ham-icon').click(function(e){
   $('.nav-list').toggleClass('active');
 
 })
+
